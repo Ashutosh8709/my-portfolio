@@ -1,0 +1,19 @@
+.custom-cursor {
+  display: inline-block;
+  width: 1.5px;
+  height: 1.2em;
+  background-color: #82b1ff;
+  margin-left: 3px;
+  animation: blink 1s steps(2, start) infinite;
+  vertical-align: bottom;
+  opacity: 0.7;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
