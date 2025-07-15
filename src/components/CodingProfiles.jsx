@@ -6,32 +6,12 @@ export default function CodingProfiles(){
     title: "LeetCode",
     image: "https://leetcard.jacoblin.cool/Ashutosh_8709?ext=contest",
     stats: [
-      { label: "Problems Solved:", value: "650+" },
-      { label: "Max Rating:", value: "1759" },
-      { label: "Total Contests:", value: "25" },
+      { label: "Problems Solved:", value: "100+" },
+      { label: "Max Rating:", value: "1477" },
+      { label: "Total Contests:", value: "2" },
     ],
     link: "https://leetcode.com/Ashutosh_8709/",
   },
-//   {
-//     title: "CodeForces",
-//     image: "https://codeforces-readme-stats.vercel.app/api/card?username=Ashutosh8709&theme=tokyonight",
-//     stats: [
-//       { label: "Rank", value: "Pupil" },
-//       { label: "Max Rating", value: "1247" },
-//       { label: "Total Contests", value: "6" },
-//     ],
-//     link: "https://codeforces.com/profile/Ashutosh_CF_Handle",
-//   },
-//   {
-//     title: "GeeksForGeeks",
-//     image: "https://gfgstatscard.vercel.app/ashutosh2l2vo",
-//     stats: [
-//       { label: "Problems Solved", value: "250+" },
-//       { label: "Coding Score", value: "867" },
-//       { label: "Rank", value: "1000" },
-//     ],
-//     link: "https://auth.geeksforgeeks.org/user/AshutoshGFG",
-//   },
 ];
     return(
         <section id="coding profiles" className="scroll-mt-[-61px] flex flex-col justify-center px-[7vw]">
@@ -79,20 +59,20 @@ export default function CodingProfiles(){
             <div className="w-full bg-gray-700/30 rounded-xl p-4 mt-2 mb-4">
                 <div className="flex justify-between text-sm sm:text-base text-white py-1">
                   <span>Rank:</span>
-                  <span className="font-semibold">100+</span>
+                  <span className="font-semibold">unrated</span>
                 </div>
                 <div className="flex justify-between text-sm sm:text-base text-white py-1">
                   <span>Max Rating:</span>
-                  <span className="font-semibold">100+</span>
+                  <span className="font-semibold">unrated</span>
                 </div>
                 <div className="flex justify-between text-sm sm:text-base text-white py-1">
                   <span>Total Contests:</span>
-                  <span className="font-semibold">100+</span>
+                  <span className="font-semibold">0</span>
                 </div>
             </div>
 
             <a
-              href=""
+              href="https://codeforces.com/profile/Ashutosh8709"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 mt-auto text-sm bg-gradient-to-r from-purple-500/80 to-pink-500/80 transition-all duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)] hover:scale-105 cursor-pointer border border-white/20 hover:from-purple-500 hover:to-pink-500 text-white font-medium px-4 py-2 rounded-full"
@@ -115,16 +95,16 @@ export default function CodingProfiles(){
                 </div>
                 <div className="flex justify-between text-sm sm:text-base text-white py-1">
                   <span>Coding Score:</span>
-                  <span className="font-semibold">100+</span>
+                  <span className="font-semibold">300+</span>
                 </div>
                 <div className="flex justify-between text-sm sm:text-base text-white py-1">
                   <span>Rank:</span>
-                  <span className="font-semibold">100+</span>
+                  <span className="font-semibold">5000</span>
                 </div>
             </div>
 
             <a
-              href=""
+              href="https://www.geeksforgeeks.org/user/ashutosh2l2vo/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 mt-auto text-sm bg-gradient-to-r from-purple-500/80 to-pink-500/80 transition-all duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)] hover:scale-105 cursor-pointer border border-white/20 hover:from-purple-500 hover:to-pink-500 text-white font-medium px-4 py-2 rounded-full"

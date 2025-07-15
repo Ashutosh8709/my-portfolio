@@ -11,7 +11,6 @@ export default function Navbar() {
                     "Skills",
                     "Coding Profiles",
                     "Projects",
-                    "Publications",
                     "Education",
                     "Contact"];
 

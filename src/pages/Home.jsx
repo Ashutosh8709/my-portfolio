@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import Education from "../components/Education/Education";
 import CodingProfiles from "../components/CodingProfiles";
 import Contact from "../components/Contact";
-import Project from "../assets/Project/Project";
+import Project from "../components/Project/Project";
 
 export default function Home(){
     return (

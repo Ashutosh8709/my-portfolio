@@ -25,8 +25,8 @@ export default function Project(){
             img:maarmitraLogo,
             desc:"A powerful and user-friendly AI-powered web application designed to uncover and showcase real-time traffic insights, detect road accidents, forecast congestion, and visualize accident-prone zones—helping users and authorities make safer, data-driven decisions on the road.",
             tags:['Real-Time','Python','Machine Learning','YOLOV8','OpenCV','Computer Vision','scikit-Learn','Streamlit','XGBoost'],
-            github:"",
-            webapp:"",
+            github:"https://github.com/Ashutosh8709/MaargMitra---Smart-Traffic-and-Accident-Management-System",
+            webapp:"https://maargmitra.streamlit.app/",
         },
         {   
             id:1,
@@ -34,8 +34,8 @@ export default function Project(){
             img:checkifyLogo,
             desc:"A smart, AI-driven web application designed to assist users in diagnosing multiple diseases by analyzing input symptoms or medical parameters—empowering early detection and preventive care with the help of machine learning.",
             tags:['Medical Diagnosis','Python','Machine Learning','YOLOV8','OpenCV','Computer Vision','scikit-Learn','Streamlit','XGBoost'],
-            github:"",
-            webapp:"",
+            github:"https://github.com/Ashutosh8709/Health-Disease-Diagnosis-system",
+            webapp:"https://checkify.streamlit.app/",
         },
         {   
             id:2,
@@ -43,8 +43,8 @@ export default function Project(){
             img:wanderlustLogo,
             desc:"A robust and dynamic MERN-based web application inspired by Airbnb, designed to allow users to explore, create, review, and manage stay listings—offering a seamless experience for travelers and hosts alike.",
             tags:['Node.js','Express.js','MongoDB','Mongoose','EJS','JavaScript','Cloudinary','Bootstrap','Multer','RESTful API'],
-            github:"",
-            webapp:"",
+            github:"https://github.com/Ashutosh8709/Wanderlust",
+            webapp:"https://wanderlust-g2yd.onrender.com/listings",
         },
         {   
             id:3,
@@ -52,7 +52,7 @@ export default function Project(){
             img:notesLogo,
             desc:"A minimalistic yet powerful full-stack notes application designed to help users create, update, and manage their personal notes with ease—featuring authentication, search, and a clean, intuitive interface.",
             tags:['React', 'Node.js' ,'Express.js', 'MongoDB' ,'Mongoose', 'JavaScript','Tailwind','CSS' ,'Axios', 'React Router'],
-            github:"",
+            github:"https://github.com/Ashutosh8709/Notes-App",
             webapp:"",
         },
         {   
@@ -61,7 +61,7 @@ export default function Project(){
             img:todoLogo,
             desc:"A clean and efficient task management web app built for organizing daily to-dos with real-time CRUD operations, seamless UI, and modern backend integration—helping users stay productive and focused.",
             tags:['MERN','Tailwind CSS' ,'Axios' ,'React Router','Task Filtering', 'REST API'],
-            github:"",
+            github:"https://github.com/Ashutosh8709/Task-Manager",
             webapp:"",
         },
     ];
@@ -76,7 +76,7 @@ export default function Project(){
 
         <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {Projects.map((project)=>
-            <div key={project.id} onClick={()=>handleOpenModel(project)} className="border border-gray-600 bg-gray-800/20 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer shadow-[0_0_20px_1px_rgba(168,85,247,0.5)]
+            <div key={project.id} onClick={()=>handleOpenModel(project)} className="border border-white bg-gray-800/20 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer shadow-[0_0_20px_1px_rgba(168,85,247,0.5)]
             hover:scale-105 transition-transform duration-300 
             ">
                 <div className='p-4'>

@@ -8,7 +8,8 @@ export default function Footer(){
         }
     };
     return(
-        <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw] ">
+        <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[7vw] ">
+            <hr className="border-t border-gray-700 w-full mt-15 mb-10" />
             <div className="container mx-auto text-center ">
                 <h2 className="text-xl font-semibold bg-gradient-to-r from-purple-400 to-pink-500 text-transparent bg-clip-text">
                     Ashutosh Kumar
