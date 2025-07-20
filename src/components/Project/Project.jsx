@@ -3,7 +3,10 @@ import checkifyLogo from './checkify.png'
 import wanderlustLogo from './wanderlust.png'
 import notesLogo from './Notes.png'
 import todoLogo from './TO-DO.png'
+import localHandsLogo from './localhandsLogo.png'
 import { useState } from 'react'
+import {motion} from 'framer-motion'
+import { fadeIn } from '../../framerMotion/variants';
 
 
 
@@ -46,8 +49,17 @@ export default function Project(){
             github:"https://github.com/Ashutosh8709/Wanderlust",
             webapp:"https://wanderlust-g2yd.onrender.com/listings",
         },
+        {
+          id:3,
+          title:"Local Technician Finder Platform",
+          img:localHandsLogo,
+          desc: "A full-featured MERN-based web application designed to help users easily discover and book verified local technicians for home, vehicle, and computer repairs—offering real-time availability, location-based filtering, and user reviews for a seamless service experience.",
+          tags: ['MongoDB', 'Express.js', 'Node.js', 'React', 'Vite', 'Mongoose', 'Tailwind CSS', 'Axios', 'JWT', 'RESTful API'],
+          github:"https://github.com/Ashutosh8709/Local-Technician-Finder",
+          webapp:"https://localhands.vercel.app",
+        },
         {   
-            id:3,
+            id:4,
             title:"Notes Manager",
             img:notesLogo,
             desc:"A minimalistic yet powerful full-stack notes application designed to help users create, update, and manage their personal notes with ease—featuring authentication, search, and a clean, intuitive interface.",
@@ -56,7 +68,7 @@ export default function Project(){
             webapp:"",
         },
         {   
-            id:4,
+            id:5,
             title:"Task Manager",
             img:todoLogo,
             desc:"A clean and efficient task management web app built for organizing daily to-dos with real-time CRUD operations, seamless UI, and modern backend integration—helping users stay productive and focused.",
@@ -69,10 +81,16 @@ export default function Project(){
     return(
         <section id="projects" className=" scroll-mt-[-101px] flex flex-col justify-center px-[7vw] relative">
             <hr className="border-t border-white w-full my-25" />
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center bg-gradient-to-r from-purple-400 to-pink-500 text-transparent bg-clip-text mb-4">
+            <motion.h2 variants={fadeIn('up',0.2)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{once:true,amount:0}}className="text-4xl md:text-5xl lg:text-6xl font-bold text-center bg-gradient-to-r from-purple-400 to-pink-500 text-transparent bg-clip-text mb-4">
             Projects
-        </h2>
-        <p className='text-gray-400 font-semibold text-lg mb-20'>A showcase of the projects I have worked on, highlighting my skills and experience in various technologies</p>
+        </motion.h2>
+        <motion.p variants={fadeIn('up',0.2)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{once:true,amount:0}}className='text-gray-400 font-semibold text-lg mb-20'>A showcase of the projects I have worked on, highlighting my skills and experience in various technologies</motion.p>
 
         <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {Projects.map((project)=>

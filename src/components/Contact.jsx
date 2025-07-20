@@ -3,6 +3,8 @@ import { FaPaperPlane } from "react-icons/fa";
 import {ToastContainer, toast} from'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser'
+import {motion} from 'framer-motion'
+import { fadeIn } from '../framerMotion/variants';
 
 export default function Contact(){
     const form=useRef();
@@ -50,11 +52,20 @@ export default function Contact(){
             <hr className="border-t border-white w-full mb-25" />
             <ToastContainer/>
             <div className='text-center mb-16'>
-                <h2 className='text-4xl md:text-5xl lg:text-6xl font-bold text-center bg-gradient-to-r from-purple-400 to-pink-500 text-transparent bg-clip-text mb-4'>Contact</h2>
-                <p className='text-gray-400 mt-4 text-lg font-semibold '>I'd love to hear from you-reach out for any opportunities or question!</p>    
+                <motion.h2 variants={fadeIn('up',0.2)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{once:true,amount:0}}className='text-4xl md:text-5xl lg:text-6xl font-bold text-center bg-gradient-to-r from-purple-400 to-pink-500 text-transparent bg-clip-text mb-4'>Contact</motion.h2>
+                <motion.p variants={fadeIn('up',0.4)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{once:true,amount:0}}className='text-gray-400 mt-4 text-lg font-semibold '>I'd love to hear from you-reach out for any opportunities or question!</motion.p>    
             </div>
 
-            <div className="mt-8 w-full max-w-md bg-gray-800/20 backdrop-blur-md p-6 rounded-lg shadow-2xl border border-gray-700 shadow-[0_0_20px_1px_rgba(168,85,247,0.5)]">
+            <motion.div variants={fadeIn('up',0.4)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{once:true,amount:0.5}}className="mt-8 w-full max-w-md bg-gray-800/20 backdrop-blur-md p-6 rounded-lg shadow-2xl border border-gray-700 shadow-[0_0_20px_1px_rgba(168,85,247,0.5)]">
                 <h3 className="text-xl font-semibold text-white text-center ">
                     Connect With Me
                 </h3>
@@ -74,7 +85,7 @@ export default function Contact(){
                         Send&nbsp;&nbsp;<FaPaperPlane/>
                     </button>
                 </form>
-            </div>
+            </motion.div>
 
 
         </section>

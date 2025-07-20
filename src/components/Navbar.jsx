@@ -6,8 +6,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
 
-  const navItems = ["Home", 
-                    "About", 
+  const navItems = ["About", 
                     "Skills",
                     "Coding Profiles",
                     "Projects",
