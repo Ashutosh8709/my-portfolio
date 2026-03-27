@@ -9,29 +9,32 @@ import Education from "../components/Education/Education";
 import CodingProfiles from "../components/CodingProfiles";
 import Contact from "../components/Contact";
 import Project from "../components/Project/Project";
+import Certificates from "../components/Certificates/Certificates";
+import Achievements from "../components/Achievements/Achievements";
 
-export default function Home(){
-    return (
-        <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-            {/* Theme Toggle */}
-                {/* <ThemeToggle/> */}
-            {/* Background Effects */}
-                <StarBackground/>
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      {/* Theme Toggle */}
+      {/* <ThemeToggle/> */}
+      {/* Background Effects */}
+      <StarBackground />
 
-            {/* Navbar */}
-                <Navbar/>
-            {/* Main Section */}
-                <About/>
-                <AboutMe/>
-                <Skills/>
-                <CodingProfiles/>
-                <Project/>
-                <Education/>
-                <Contact/>
+      {/* Navbar */}
+      <Navbar />
+      {/* Main Section */}
+      <About />
+      <AboutMe />
+      <Skills />
+      <CodingProfiles />
+      <Project />
+      <Certificates />
+      <Achievements />
+      <Education />
+      <Contact />
 
-
-            {/* Footer */}
-                <Footer/>
-        </div>
-    );
+      {/* Footer */}
+      <Footer />
+    </div>
+  );
 }
